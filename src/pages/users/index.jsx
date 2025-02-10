@@ -4,7 +4,7 @@ import UserComp from "@/components/UserDetails";
 import axios from "axios";
 
 import { useEffect, useState } from "react";
-const GITHUBTOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+// const GITHUBTOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 export default function Users() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
