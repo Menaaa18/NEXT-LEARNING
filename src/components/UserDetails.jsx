@@ -9,7 +9,12 @@ function UserComp({ user }) {
   return (
     <div
       onClick={() => {
-        router.push(`/users/${user.login}`);
+        router.push({
+          pathname: `/users/${user.login}` ,
+        query: {
+          imgUrl: user.avatar_url,
+        },
+      });
       }}
       className="shadow-md hover:shadow-none flex flex-col gap-3 rounded-x1 cursor-pointer"
     >
